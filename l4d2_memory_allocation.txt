@@ -1,0 +1,49 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"malloc"
+			{
+				"linux"	"555" // 0x22B
+			}
+
+			"free"
+			{
+				"linux"	"491" // 0x1EB
+			}
+
+			"memset"
+			{
+				"linux"	"175" // 0xAF
+			}
+
+			"realloc"
+			{
+				"linux"	"106" // 0x6A
+			}
+
+			"calloc" // CBaseEntity::operator new
+			{
+				"linux"	"20" // 0x14
+			}
+		}
+
+		"Signatures"
+		{
+			"CHintSystem::Init"
+			{
+				"library"	"server"
+				"linux"		"@_ZN11CHintSystem4InitEP11CBasePlayeriPPKc"
+			}
+
+			"CBaseEntity::operator_new"
+			{
+				"library"	"server"
+				"linux"		"@_ZN11CBaseEntitynwEj"
+			}
+		}
+	}
+}
+
